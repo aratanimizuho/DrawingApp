@@ -17,23 +17,18 @@ class DrawView: UIImageView {
     var currentDrawing: Drawing?
     var finishedDrawings = [Drawing]()
     var currentColor = UIColor.black
-    var myImageView : UIImageView!
-    @IBOutlet var UIView:UIViewController!
     
-    func draw() {
-        
+    
+    func draw(){
         for drawing in finishedDrawings {
             drawing.color.setStroke()
-            let myImage = stroke(drawing: drawing)
-            myImageView=UIImageView(image: myImage)
+            stroke(drawing: drawing)
         }
         
         if let drawing = currentDrawing {
             drawing.color.setStroke()
-            let myImage=stroke(drawing: drawing)
-            myImageView=UIImageView(image: myImage)
+            stroke(drawing: drawing)
         }
-        UIView.view.addSubview(myImageView)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -68,6 +63,7 @@ class DrawView: UIImageView {
                 let location = touch.location(in: self)
                 drawing.points.append(location)
                 finishedDrawings.append(drawing)
+                
             }
         }
         currentDrawing = nil
@@ -76,7 +72,7 @@ class DrawView: UIImageView {
     }
     
     func clear() {
-        finishedDrawings.removeAll()
+        //finishedDrawings.removeAll()
         setNeedsDisplay()
     }
     
@@ -92,7 +88,9 @@ class DrawView: UIImageView {
         currentColor = color
     }
         
-    func stroke(drawing: Drawing)-> UIImage{
+    func stroke(drawing: Drawing){
+        
+        //let resize = CGSize(width: framewidth, height: frameHight)
         
         UIGraphicsBeginImageContextWithOptions(self.frame.size, self.isOpaque, 0.0)
         let context = UIGraphicsGetCurrentContext()!
@@ -101,25 +99,28 @@ class DrawView: UIImageView {
         
         UIGraphicsBeginImageContext(image.size)
         
-            let path = UIGraphicsGetCurrentContext()!
-            path.setLineWidth (10.0)
-            path.setLineCap(.round)
-            path.setLineJoin(.round)
+        let path = UIGraphicsGetCurrentContext()!
+        path.setLineWidth (10.0)
+        path.setLineCap(.round)
+        path.setLineJoin(.round)
             
-            let begin = drawing.points[0];
-            path.move(to: begin)
+        let begin = drawing.points[0];
+        path.move(to: begin)
             
-            if drawing.points.count > 1 {
-                for i in 1...(drawing.points.count - 1) {
-                    let end = drawing.points[i]
-                    path.addLine(to: end)
-                }
+        if drawing.points.count > 1 {
+            for i in 1...(drawing.points.count - 1) {
+                let end = drawing.points[i]
+                path.addLine(to: end)
             }
-            path.strokePath()
+        }
+        path.strokePath()
         
         let myImage = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        self.image=myImage
+        
         UIGraphicsEndImageContext()
-        return myImage
+        
         }
 
     /*

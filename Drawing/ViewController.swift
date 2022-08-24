@@ -7,10 +7,16 @@
 
 import UIKit
 
+var framewidth:Double  = 0.0
+var frameHight:Double =  0.0
+
+
 class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavigationControllerDelegate {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
-
+    @IBOutlet weak var currentimage: UIImageView!
+    var originalimage:UIImage!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 //        segmentedControl.selectedSegmentIndex = 0
@@ -23,30 +29,33 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
     }
     
     @IBAction func clearTapped(sender: Any) {
+        
+        currentimage.image=nil
+        currentimage.image=originalimage
+        //let drawView = DrawView()
+        //drawView.clear()
+        }
+    
+    @IBAction func undoTapped(sender: Any) {
         let drawView = DrawView()
-            drawView.clear()
+        drawView.undo()
+    }
+    
+    @IBAction func colorChanged(sender: Any) {
+        var c = UIColor.black
+        switch segmentedControl.selectedSegmentIndex {
+        case 1:
+            c = UIColor.blue
+            break
+        case 2:
+            c = UIColor.red
+            break
+        default:
+            break
         }
-        
-        @IBAction func undoTapped(sender: Any) {
-            let drawView = DrawView()
-            drawView.undo()
-        }
-        
-        @IBAction func colorChanged(sender: Any) {
-            var c = UIColor.black
-            switch segmentedControl.selectedSegmentIndex {
-            case 1:
-                c = UIColor.blue
-                break
-            case 2:
-                c = UIColor.red
-                break
-            default:
-                break
-            }
-            let drawView = DrawView()
-            drawView.setDrawingColor(color: c)
-        }
+        let drawView = DrawView()
+        drawView.setDrawingColor(color: c)
+    }
     
     @IBAction func cameraTapped(sender: UIButton) {
         showSourceSelection()
@@ -88,28 +97,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             
-            // UIImageView 初期化
-            let imageView = UIImageView(image:pickedImage)
-            
-            // スクリーンの縦横サイズを取得
-            let screenWidth:CGFloat = view.frame.size.width
-            let screenHeight:CGFloat = view.frame.size.height
-            
-            // 画像の縦横サイズを取得
-            let imgWidth:CGFloat = pickedImage.size.width
-            let imgHeight:CGFloat = pickedImage.size.height
-            
-            // 画像サイズをスクリーン幅に合わせる
-            let scale:CGFloat = screenWidth / imgWidth
-            let rect:CGRect = CGRect(x:0, y:0, width:imgWidth*scale, height:imgHeight*scale)
-            
-            // ImageView frame をCGRectで作った矩形に合わせる
-            imageView.frame = rect
-            
-            // 画像の中心を画面の中心に設定
-            imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
-            
-            self.view.addSubview(imageView)
+            originalimage=pickedImage
+            currentimage.image = pickedImage
+            //self.view.addSubview(imageView)
         }
         picker.dismiss(animated: true, completion: nil)
     }

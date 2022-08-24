@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4A2F807C-DFC3-4E3C-8B1D-EA95BB277AD3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Drawing/DrawView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "stroke(drawing:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "444404A8-5676-40F4-85E7-2C302E4CF66B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Drawing/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "clearTapped(sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3A914285-02B1-403C-A4B3-823AA66453E3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Drawing/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "clearTapped(sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "DC5ADF5B-4D0D-47B6-A99B-C5B73505E7FF"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -62,8 +14,8 @@
             filePath = "Drawing/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "pickImage(sourceType:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +30,8 @@
             filePath = "Drawing/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +46,8 @@
             filePath = "Drawing/DrawView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "touchesBegan(_:with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,10 +62,10 @@
             filePath = "Drawing/DrawView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "touchesMoved(_:with:)"
-            landmarkType = "7">
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "DrawView"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -126,9 +78,9 @@
             filePath = "Drawing/DrawView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "touchesEnded(_:with:)"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "touchesMoved(_:with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -136,6 +88,224 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4496CACD-AACB-447D-A7F4-532E836EDC9F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing/DrawView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "DrawView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "876EAF6B-CA52-4415-98B5-DFCBCA80C96F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing/DrawView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "stroke(drawing:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "337339E3-D62C-45B5-A5EA-4854F0B44752"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing/DrawView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "stroke(drawing:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "427AE605-6A4C-4167-8207-403A3C258D2D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing/DrawView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "DrawView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B438E11-1E9F-4F1D-8ED9-BB8A74527E62"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing/DrawView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "DrawView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "8B438E11-1E9F-4F1D-8ED9-BB8A74527E62 - 7383df558bcd6d6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing.DrawView.currentColor.getter : __C.UIColor"
+                  moduleName = "Drawing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aratanimizuho/Desktop/%E3%83%86%E3%82%99%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%95%E3%82%9A%20-%20%E8%8D%92%E8%B0%B7%E7%91%9E%E7%A9%82%E3%81%AEMacBook%20Air/swift/Drawing/Drawing/DrawView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  uuid = "8B438E11-1E9F-4F1D-8ED9-BB8A74527E62 - 90b8951a87b6497b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing.DrawView.currentColor.setter : __C.UIColor"
+                  moduleName = "Drawing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aratanimizuho/Desktop/%E3%83%86%E3%82%99%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%95%E3%82%9A%20-%20%E8%8D%92%E8%B0%B7%E7%91%9E%E7%A9%82%E3%81%AEMacBook%20Air/swift/Drawing/Drawing/DrawView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "8B438E11-1E9F-4F1D-8ED9-BB8A74527E62 - 67679055afbf446a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing.DrawView.currentColor.modify : __C.UIColor"
+                  moduleName = "Drawing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aratanimizuho/Desktop/%E3%83%86%E3%82%99%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%95%E3%82%9A%20-%20%E8%8D%92%E8%B0%B7%E7%91%9E%E7%A9%82%E3%81%AEMacBook%20Air/swift/Drawing/Drawing/DrawView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "8B438E11-1E9F-4F1D-8ED9-BB8A74527E62 - 7eb4d75dea501e7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing.DrawView.currentColor.modify : __C.UIColor with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Drawing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aratanimizuho/Desktop/%E3%83%86%E3%82%99%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%95%E3%82%9A%20-%20%E8%8D%92%E8%B0%B7%E7%91%9E%E7%A9%82%E3%81%AEMacBook%20Air/swift/Drawing/Drawing/DrawView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "8B438E11-1E9F-4F1D-8ED9-BB8A74527E62 - 22ecd7348fced492"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing.DrawView.init(image: Swift.Optional&lt;__C.UIImage&gt;) -&gt; Drawing.DrawView"
+                  moduleName = "Drawing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aratanimizuho/Desktop/%E3%83%86%E3%82%99%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%95%E3%82%9A%20-%20%E8%8D%92%E8%B0%B7%E7%91%9E%E7%A9%82%E3%81%AEMacBook%20Air/swift/Drawing/Drawing/DrawView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "185">
+               </Location>
+               <Location
+                  uuid = "8B438E11-1E9F-4F1D-8ED9-BB8A74527E62 - c085a12f142cdd28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing.DrawView.init(image: Swift.Optional&lt;__C.UIImage&gt;, highlightedImage: Swift.Optional&lt;__C.UIImage&gt;) -&gt; Drawing.DrawView"
+                  moduleName = "Drawing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aratanimizuho/Desktop/%E3%83%86%E3%82%99%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%95%E3%82%9A%20-%20%E8%8D%92%E8%B0%B7%E7%91%9E%E7%A9%82%E3%81%AEMacBook%20Air/swift/Drawing/Drawing/DrawView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "201">
+               </Location>
+               <Location
+                  uuid = "8B438E11-1E9F-4F1D-8ED9-BB8A74527E62 - b4f52946f2778ae7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing.DrawView.init(frame: __C.CGRect) -&gt; Drawing.DrawView"
+                  moduleName = "Drawing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aratanimizuho/Desktop/%E3%83%86%E3%82%99%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%95%E3%82%9A%20-%20%E8%8D%92%E8%B0%B7%E7%91%9E%E7%A9%82%E3%81%AEMacBook%20Air/swift/Drawing/Drawing/DrawView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "255">
+               </Location>
+               <Location
+                  uuid = "8B438E11-1E9F-4F1D-8ED9-BB8A74527E62 - 3eaee3a0de83a7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing.DrawView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Drawing.DrawView&gt;"
+                  moduleName = "Drawing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aratanimizuho/Desktop/%E3%83%86%E3%82%99%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%95%E3%82%9A%20-%20%E8%8D%92%E8%B0%B7%E7%91%9E%E7%A9%82%E3%81%AEMacBook%20Air/swift/Drawing/Drawing/DrawView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92871A68-1F0A-4218-83D6-6955AF049105"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing/DrawView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "undo()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50BBE0F5-EF88-4994-A52E-4232F2B639F9"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -151,16 +321,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FDC2F058-6ADA-4F60-970E-7FD27A2D002D"
+            uuid = "55A63259-092A-4D7A-9260-8C2CCCD7ECD6"
             shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "clearTapped(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2452D506-C803-4E8F-9DE0-51AAF69C701A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D0B93362-7BD5-43E7-8D87-A5F5716E4B9A"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Drawing/DrawView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "draw()"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "draw(_:in:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D0B93362-7BD5-43E7-8D87-A5F5716E4B9A - 527f8e85825a3adb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing.DrawView.draw() -&gt; ()"
+                  moduleName = "Drawing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aratanimizuho/Desktop/%E3%83%86%E3%82%99%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%95%E3%82%9A%20-%20%E8%8D%92%E8%B0%B7%E7%91%9E%E7%A9%82%E3%81%AEMacBook%20Air/swift/Drawing/Drawing/DrawView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "403">
+               </Location>
+               <Location
+                  uuid = "D0B93362-7BD5-43E7-8D87-A5F5716E4B9A - 527f8e85825a3adb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing.DrawView.draw() -&gt; ()"
+                  moduleName = "Drawing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aratanimizuho/Desktop/%E3%83%86%E3%82%99%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%95%E3%82%9A%20-%20%E8%8D%92%E8%B0%B7%E7%91%9E%E7%A9%82%E3%81%AEMacBook%20Air/swift/Drawing/Drawing/DrawView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "470">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6716B395-C7C0-4A25-A23C-8FFD50BBF935"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing/DrawView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "stroke(drawing:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A0B63F3-0BD1-41D4-9860-1ACB33C0155E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing/DrawView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "stroke(drawing:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

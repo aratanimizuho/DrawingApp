@@ -51,9 +51,6 @@
                             </toolbar>
                             <imageView clipsSubviews="YES" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G9e-fw-R1E" customClass="DrawView" customModule="Drawing">
                                 <rect key="frame" x="20" y="96" width="374" height="747"/>
-                                <connections>
-                                    <outlet property="UIView" destination="BYZ-38-t0r" id="hkS-uX-52u"/>
-                                </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -73,6 +70,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentimage" destination="G9e-fw-R1E" id="PhX-gg-g7L"/>
                         <outlet property="view" destination="G9e-fw-R1E" id="qfi-O6-BfG"/>
                     </connections>
                 </viewController>
