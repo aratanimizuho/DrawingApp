@@ -24,7 +24,7 @@
                                     <segment title="Red"/>
                                 </segments>
                                 <connections>
-                                    <action selector="colorChangedWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="WZn-4I-rhC"/>
+                                    <action selector="colorChangedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="WQ2-CO-zey"/>
                                 </connections>
                             </segmentedControl>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXj-gI-dFX">
@@ -70,7 +70,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="currentimage" destination="G9e-fw-R1E" id="PhX-gg-g7L"/>
+                        <outlet property="currentimage" destination="G9e-fw-R1E" id="kp6-6h-5Yr"/>
+                        <outlet property="drawView" destination="G9e-fw-R1E" id="Ha6-2P-WQb"/>
+                        <outlet property="segmentedControl" destination="Lmv-kd-bme" id="mMv-gH-44r"/>
                         <outlet property="view" destination="G9e-fw-R1E" id="qfi-O6-BfG"/>
                     </connections>
                 </viewController>

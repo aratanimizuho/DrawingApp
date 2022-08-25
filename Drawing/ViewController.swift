@@ -8,10 +8,12 @@
 import UIKit
 
 var framewidth:Double  = 0.0
-var frameHight:Double =  0.0
+var frameHeight:Double =  0.0
 
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavigationControllerDelegate {
+    
+    @IBOutlet weak var drawView:DrawView!
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var currentimage: UIImageView!
@@ -19,7 +21,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.selectedSegmentIndex = 0
         // Do any additional setup after loading the view.
     }
     
@@ -32,12 +34,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
         
         currentimage.image=nil
         currentimage.image=originalimage
-        //let drawView = DrawView()
-        //drawView.clear()
+        
+        drawView.clear()
         }
     
     @IBAction func undoTapped(sender: Any) {
-        let drawView = DrawView()
         drawView.undo()
     }
     
@@ -53,7 +54,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
         default:
             break
         }
-        let drawView = DrawView()
         drawView.setDrawingColor(color: c)
     }
     
@@ -97,8 +97,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             
+            framewidth=pickedImage.size.width
+            frameHeight=pickedImage.size.height
             originalimage=pickedImage
             currentimage.image = pickedImage
+            
             //self.view.addSubview(imageView)
         }
         picker.dismiss(animated: true, completion: nil)

@@ -12,12 +12,13 @@ struct Drawing {
     var color = UIColor.black
     var points = [CGPoint]()
 }
+
 class DrawView: UIImageView {
     
     var currentDrawing: Drawing?
     var finishedDrawings = [Drawing]()
     var currentColor = UIColor.black
-    
+    var contexCache:[UIImage]=[]
     
     func draw(){
         for drawing in finishedDrawings {
@@ -40,6 +41,13 @@ class DrawView: UIImageView {
             currentDrawing?.color = currentColor
             currentDrawing?.points.append(location)
             setNeedsDisplay()
+        }
+        
+        if contexCache.count==0 {
+            
+            if self.image != nil {
+                contexCache.append(self.image!)
+            }
         }
     }
     
@@ -67,21 +75,30 @@ class DrawView: UIImageView {
             }
         }
         currentDrawing = nil
+        
         draw()
+        contexCache.append(self.image!)
         setNeedsDisplay()
     }
     
     func clear() {
-        //finishedDrawings.removeAll()
+        finishedDrawings.removeAll()
         setNeedsDisplay()
     }
     
     func undo() {
-        if finishedDrawings.count == 0 {
+        
+        switch contexCache.count{
+        case (0...1):
             return
+        case 1:
+            clear()
+        default:
+            contexCache.removeLast()
+            self.image = contexCache.last
+            setNeedsDisplay()
         }
-        finishedDrawings.remove(at: finishedDrawings.count - 1)
-        setNeedsDisplay()
+        
     }
     
     func setDrawingColor(color : UIColor){
@@ -90,23 +107,22 @@ class DrawView: UIImageView {
         
     func stroke(drawing: Drawing){
         
-        //let resize = CGSize(width: framewidth, height: frameHight)
+        if contexCache.count != 0{
+            self.image=contexCache[contexCache.count-1]
+        }
         
-        UIGraphicsBeginImageContextWithOptions(self.frame.size, self.isOpaque, 0.0)
-        let context = UIGraphicsGetCurrentContext()!
-        self.layer.render(in: context)
-        let image = UIGraphicsGetImageFromCurrentImageContext()!
-        
-        UIGraphicsBeginImageContext(image.size)
-        
+        UIGraphicsBeginImageContextWithOptions(self.frame.size, false, 0.0)
         let path = UIGraphicsGetCurrentContext()!
+        
+        self.layer.render(in: path)
+        
         path.setLineWidth (10.0)
         path.setLineCap(.round)
         path.setLineJoin(.round)
-            
+
         let begin = drawing.points[0];
         path.move(to: begin)
-            
+
         if drawing.points.count > 1 {
             for i in 1...(drawing.points.count - 1) {
                 let end = drawing.points[i]
@@ -115,11 +131,10 @@ class DrawView: UIImageView {
         }
         path.strokePath()
         
-        let myImage = UIGraphicsGetImageFromCurrentImageContext()!
-        
-        self.image=myImage
+        self.image=UIGraphicsGetImageFromCurrentImageContext()!
         
         UIGraphicsEndImageContext()
+        
         
         }
 
