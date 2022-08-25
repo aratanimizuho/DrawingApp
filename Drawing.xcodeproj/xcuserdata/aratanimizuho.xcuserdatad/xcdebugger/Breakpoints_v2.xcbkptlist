@@ -514,8 +514,8 @@
             filePath = "Drawing/DrawView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "stroke(drawing:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -668,7 +668,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "038C3EE4-6CE7-4F33-9CBF-08DEBA296443"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Drawing/ViewController.swift"

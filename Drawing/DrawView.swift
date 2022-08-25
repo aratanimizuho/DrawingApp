@@ -119,6 +119,7 @@ class DrawView: UIImageView {
         path.setLineWidth (10.0)
         path.setLineCap(.round)
         path.setLineJoin(.round)
+        path.setStrokeColor(currentColor.cgColor)
 
         let begin = drawing.points[0];
         path.move(to: begin)
