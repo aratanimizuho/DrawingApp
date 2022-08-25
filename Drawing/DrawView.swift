@@ -82,7 +82,8 @@ class DrawView: UIImageView {
     }
     
     func clear() {
-        finishedDrawings.removeAll()
+        self.image = contexCache.first
+        contexCache.removeAll()
         setNeedsDisplay()
     }
     

@@ -7,9 +7,10 @@
 
 import UIKit
 
-var framewidth:Double  = 0.0
-var frameHeight:Double =  0.0
-
+enum SelectButton{
+    case undo
+    case clear
+}
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavigationControllerDelegate {
     
@@ -18,6 +19,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var currentimage: UIImageView!
     var originalimage:UIImage!
+    var select:SelectButton = .undo
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +34,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
     
     @IBAction func clearTapped(sender: Any) {
         
-        currentimage.image=nil
-        currentimage.image=originalimage
+        //currentimage.image=nil
+        //currentimage.image=originalimage
         
+        select = .clear
         drawView.clear()
         }
     
     @IBAction func undoTapped(sender: Any) {
+        
+        select = .undo
         drawView.undo()
     }
     
@@ -97,8 +102,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             
-            framewidth=pickedImage.size.width
-            frameHeight=pickedImage.size.height
             originalimage=pickedImage
             currentimage.image = pickedImage
             
